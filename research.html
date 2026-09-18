@@ -1,1 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research | Jaida Lamela Rhea</title>
+    <style>
+        /* Precision Academic Grid & Theme Setup */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        :root {
+            --primary: #1b362c;     /* Deep Scholar Forest Green */
+            --accent: #b45309;      /* Muted Amber/Ochre */
+            --bg-body: #fbfbf9;     /* Ultra-light Crisp Parchment */
+            --text-dark: #27272a;   /* Deep Slate for High-Contrast Text */
+            --border-muted: #e4e4e7;/* Clean Structural Lines */
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.75;
+            color: var(--text-dark);
+            background-color: var(--bg-body);
+            -webkit-font-smoothing: antialiased;
+        }
 
+        /* Structured Academic Header Block */
+        header {
+            background-color: #fff;
+            border-bottom: 1px solid var(--border-muted);
+            padding: 35px 0;
+        }
+        .header-container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .branding h1 {
+            font-size: 2.1rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: var(--primary);
+            line-height: 1.1;
+        }
+        .branding p {
+            font-size: 0.95rem;
+            color: #6b7280;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 8px;
+            font-weight: 500;
+        }
+
+        /* Navigation Row */
+        nav {
+            display: flex;
+            gap: 28px;
+        }
+        nav a {
+            color: #4b5563;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            padding-bottom: 6px;
+            transition: color 0.2s ease;
+        }
+        nav a:hover {
+            color: var(--primary);
+        }
+        nav a.active {
+            color: var(--primary);
+            font-weight: 600;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        /* Layout Container */
+        .main-container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 50px 30px 80px 30px;
+        }
+        
+        .page-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 8px;
+        }
+
+        /* Research Project Layout Blocks */
+        .project-block {
+            background-color: #fff;
+            border: 1px solid var(--border-muted);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        .project-meta {
+            font-size: 0.9rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .project-block h3 {
+            font-size: 1.4rem;
+            color: #111;
+            margin-bottom: 12px;
+        }
+        .project-block p {
+            font-size: 1.05rem;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+        .methods-tag {
+            display: inline-block;
+            background-color: #f4f4f5;
+            color: #4b5563;
+            padding: 4px 10px;
+            font-size: 0.85rem;
+            border-radius: 4px;
+            margin-right: 8px;
+            margin-top: 5px;
+            border: 1px solid #e4e4e7;
+        }
+
+        /* Tailored Academic Footer */
+        footer {
+            background-color: #fff;
+            border-top: 1px solid var(--border-muted);
+            padding: 30px 0;
+            margin-top: auto;
+        }
+        .footer-container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 30px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: #6b7280;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Navigation Architecture -->
+    <header>
+        <div class="header-container">
+            <div class="branding">
+                <h1>Jaida Rhea</h1>
+                <p>Climate Change, Remote Sensing, and the Arctic</p>
+            </div>
+            <nav>
+                <a href="index.html">About</a>
+                <a href="research.html" class="active">Research</a>
+                <a href="publications.html">Publications</a>
+                <a href="photos.html">Field Work</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Content Workspace -->
+    <main class="main-container">
+        <h2 class="page-title">Current & Past Research</h2>
+        
+        <!-- Project 1 -->
+        <div class="project-block">
+            <div class="project-meta">Polar Science Research Laboratory &middot; Clark University</div>
+            <h3>Distributed Biological Observatory</h3>
+            <p>
+                My research in Clark University's Polar Science Research Laboratory under the mentorship of Dr. Karen Frey is focused on the Distributed Biological Observatory (DBO), which is a change detection array in the Pacific Arctic region. The DBO was created to track the broad biological responsse to sea ice retreat and associated environmental change in the region, and includes selected biological measurements at multiple trophic levels alongside hydrographic measurements and satellite observations. Specifically, my role includes comparing NASA's PACE-OCI (Plankton, Aerosol, Cloud, and ocean Ecosystem-Ocean Color Instrument) ocean color data with NASA's Aqua-MODIS (Moderate Resolution Imaging Spectroradiometer) ocean color data.
+            </p>
+            <div>
+                <span class="methods-tag">Geospatial Modeling</span>
+                <span class="methods-tag">Climate Arrays</span>
+                <span class="methods-tag">Environmental Analysis</span>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-block">
+            <div class="project-meta">Naval Research Enterprise Internship Program (NREIP) &middot; U.S. Naval Research Laboratory</div>
+            <h3>Landscape Modifications and Environmental Systems</h3>
+            <p>
+                As an NREIP participant at the U.S. Naval Research Laboratory, I am examining seasonal vegetation dynamics in the high-Arctic tundra ecosystem of Utqiaġvik, Alaska using a 12-year record of PhenoCam-derived Green Chromatic Coordinate (GCC) and Normalized Difference Vegetation Index (NDVI).
+            </p>
+            <div>
+                <span class="methods-tag">Field Methods</span>
+                <span class="methods-tag">Data Verification</span>
+                <span class="methods-tag">Environmental Science</span>
+            </div>
+        </div>
+    </main>
+
+    <!-- Structural Institutional Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 Jaida Rhea. All rights reserved.</p>
+            <p>Clark University &middot; M.S. Climate and Society</p>
+        </div>
+    </footer>
+
+</body>
+</html>
