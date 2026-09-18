@@ -3,193 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaida Rhea | Climate Change, Remote Sensing, and the Arctic </title>
+    <title>Jaida Rhea | Climate Change, Remote Sensing, and the Arctic</title>
     <style>
-      
+        /* Precision Academic Grid & Theme Setup */
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
         :root {
-            --forest: #2d4a43;
-            --terracotta: #c97a63; 
-            --oatmeal: #faf7f2;    
-            --sage: #7d9082;     
-            --charcoal: #3c4340;   
+            --primary: #1b362c;     /* Deep Scholar Forest Green */
+            --accent: #b45309;      /* Muted Amber/Ochre */
+            --bg-body: #fbfbf9;     /* Ultra-light Crisp Parchment */
+            --text-dark: #27272a;   /* Deep Slate for High-Contrast Text */
+            --border-muted: #e4e4e7;/* Clean Structural Lines */
         }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Georgia, serif;
-            line-height: 1.8;
-            color: var(--charcoal);
-            background-color: var(--oatmeal);
-            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.75;
+            color: var(--text-dark);
+            background-color: var(--bg-body);
+            -webkit-font-smoothing: antialiased;
         }
-      
+
+        /* Structured Academic Header Block */
         header {
-            max-width: 900px;
+            background-color: #fff;
+            border-bottom: 1px solid var(--border-muted);
+            padding: 35px 0;
+        }
+        .header-container {
+            max-width: 960px;
             margin: 0 auto;
-            padding: 60px 20px 20px 20px;
+            padding: 0 30px;
             display: flex;
             justify-content: space-between;
-            align-items: baseline;
+            align-items: flex-end;
             flex-wrap: wrap;
-            border-bottom: 1px dashed var(--sage);
+            gap: 20px;
         }
         .branding h1 {
-            font-family: Georgia, serif;
-            font-size: 2.4rem;
-            font-weight: 400;
-            color: var(--forest);
+            font-size: 2.1rem;
+            font-weight: 700;
             letter-spacing: -0.5px;
+            color: var(--primary);
+            line-height: 1.1;
         }
         .branding p {
-            font-size: 1rem;
-            color: var(--sage);
-            font-style: italic;
-            margin-top: 4px;
+            font-size: 0.95rem;
+            color: #6b7280;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 8px;
+            font-weight: 500;
         }
 
+        /* Clean Top-Tier Navigation Row */
         nav {
             display: flex;
-            gap: 24px;
-            margin-top: 20px;
+            gap: 28px;
         }
         nav a {
-            color: var(--charcoal);
+            color: #4b5563;
             text-decoration: none;
             font-weight: 500;
-            font-size: 1.05rem;
-            padding-bottom: 4px;
-            transition: all 0.3s ease;
+            font-size: 1rem;
+            padding-bottom: 6px;
+            transition: color 0.2s ease;
         }
-        nav a:hover, nav a.active {
-            color: var(--terracotta);
-            border-bottom: 2px solid var(--terracotta);
+        nav a:hover {
+            color: var(--primary);
+        }
+        nav a.active {
+            color: var(--primary);
+            font-weight: 600;
+            border-bottom: 2px solid var(--primary);
         }
 
-        /* Responsive Layout Grid */
+        /* Layout Grid Infrastructure */
         .main-container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px 60px 20px;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 50px 30px 80px 30px;
         }
         .profile-grid {
             display: grid;
-            grid-template-columns: 1fr 1.8fr;
-            gap: 60px;
+            grid-template-columns: 280px 1fr;
+            gap: 55px;
             align-items: flex-start;
         }
         @media (max-width: 768px) {
             .profile-grid {
                 grid-template-columns: 1fr;
-                gap: 40px;
+                gap: 35px;
             }
-            header {
+            .header-container {
                 flex-direction: column;
-                text-align: center;
-                align-items: center;
-                padding-top: 40px;
+                align-items: flex-start;
             }
             nav {
-                justify-content: center;
-                margin-top: 25px;
+                margin-top: 10px;
+                width: 100%;
+                border-top: 1px solid var(--border-muted);
+                padding-top: 15px;
             }
         }
 
-        /* Soft Rounded Image Display */
-        .image-wrapper {
-            position: relative;
+        /* Crisp Geometric Image Border */
+        .image-frame {
+            border: 1px solid var(--border-muted);
+            background-color: #fff;
+            padding: 8px;
         }
         .profile-image {
             width: 100%;
             height: auto;
-            border-radius: 20px; /* Smooth, welcoming organic edges */
-            border: 6px solid #fff;
-            box-shadow: 0 8px 24px rgba(45, 74, 67, 0.08);
+            display: block;
+            filter: grayscale(10%); /* Subtle editorial tone */
         }
         
-        /* Typography Styling */
+        /* Typography System */
         .bio-section h2 {
-            font-family: Georgia, serif;
-            font-size: 1.8rem;
-            font-weight: 400;
-            color: var(--forest);
-            margin-bottom: 20px;
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 18px;
+            letter-spacing: -0.3px;
         }
         .bio-section p {
-            margin-bottom: 22px;
-            font-size: 1.1rem;
+            margin-bottom: 20px;
+            font-size: 1.05rem;
             text-align: justify;
         }
         
-        /* Custom highlight for keywords */
+        /* Clean Accent Highlight for Links/Key Terms */
         .highlight {
-            color: var(--forest);
-            font-weight: 500;
+            color: var(--primary);
+            font-weight: 600;
         }
 
-        /* Simple Grounded Footer */
+        /* Tailored Academic Footer */
         footer {
-            max-width: 900px;
-            margin: 40px auto 0 auto;
-            padding: 30px 20px;
-            border-top: 1px dashed var(--sage);
-            font-size: 0.9rem;
-            color: var(--sage);
+            background-color: #fff;
+            border-top: 1px solid var(--border-muted);
+            padding: 30px 0;
+            margin-top: auto;
+        }
+        .footer-container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 30px;
             display: flex;
             justify-content: space-between;
+            font-size: 0.85rem;
+            color: #6b7280;
         }
     </style>
 </head>
 <body>
 
-    <!-- Upper Brand Banner -->
+    <!-- Main Navigation Architecture -->
     <header>
-        <div class="branding">
-            <h1>Jaida Rhea</h1>
-            <p>Climate Change, Remote Sensing, and the Arctic</p>
+        <div class="header-container">
+            <div class="branding">
+                <h1>Jaida Rhea</h1>
+                <p>Climate Change, Remote Sensing, and the Arctic</p>
+            </div>
+            <nav>
+                <a href="index.html" class="active">About</a>
+                <a href="research.html">Research</a>
+                <a href="publications.html">Publications</a>
+                <a href="photos.html">Field Work</a>
+            </nav>
         </div>
-        <!-- Natural Link Layout -->
-        <nav>
-            <a href="index.html" class="active">About</a>
-            <a href="research.html">Research</a>
-            <a href="publications.html">Publications</a>
-            <a href="photos.html">Field Work</a>
-        </nav>
     </header>
 
-    <!-- Main Workspace Area -->
+    <!-- Content Workspace -->
     <main class="main-container">
         <div class="profile-grid">
             
-            <!-- Column 1: Rounded Soft Image Frame -->
-            <div class="image-wrapper">
-                <img src="profile.jpg" alt="Jaida Rhea" class="profile-image">
+            <!-- Structural Profile Display -->
+            <div class="image-frame">
+                <img src="profile.jpg" alt="Jaida Lamela Rhea" class="profile-image">
             </div>
             
-            <!-- Column 2: Biography & Content -->
+            <!-- Biography Content Matrix -->
             <article class="bio-section">
-                <h2>Hello, welcome.</h2>
+                <h2>Biography</h2>
                 <p>
-                    My name is Jaida Rhea and I am a graduate student completing my Master's degree at Clark University. 
-                    My work lives at the intersection of <span class="highlight">climate dynamics</span> and <span class="highlight">earth systems science</span>, bridging geographic analysis frameworks and complex environmental data arrays to track shifting landscape behaviors.
+                    My name is Jaida Rhea and I am a graduate student at Clark University in Worcester, Massachusetts where I am pursuing my M.S. in Climate and Society. I am particularly interested in coastal Arctic environments, and my current research interests encompass using near-surface remote sensing to advance understading of Arctic vegetation responses to climate change, permafrost dynamics, and the connection between coastal and marine environments. In addition, I hold a B.A. in environmental science and professional and creative writing from Goucher College in Baltimore, Maryland.
                 </p>
                 <p>
-                    Prior to my graduate studies, I earned a B.A. in Environmental Science alongside a second major in Professional and Creative Writing from Goucher College in Baltimore. This dual background shapes my daily approach to research—allowing me to combine heavy computational mapping and remote sensing workflows with precise, accessible storytelling.
-                </p>
-                <p>
-                    My broader work involves tracking physical environmental markers, field data arrays, and exploring regional vulnerabilities across rapidly changing landscapes.
+                    My past research and internship experiences have ranged from studying high-Arctic tundra vegetation using the PhenoCam Network with the U.S. Naval Research Laboratory and wetland conservation work with the National Oceanic and Atmospheric Administration (NOAA) to working on environmental justice projects with the Maryland Institute for Applied Environmental Health and the Smithsonian Environmental Research Center. While my ultimate goal is to be a climate scientist, I am passionate about science communication and blieve writing and developing effective and accessible communication strategies have a very important role to play in bridging the gap between public understanding and scientific consensus.
                 </p>
             </article>
 
         </div>
     </main>
 
-    <!-- Earthy Footer -->
+    <!-- Structural Institutional Footer -->
     <footer>
-        <p>&copy; 2026 - Jaida Rhea</p>
-        <p>Grounded in Code & Nature</p>
+        <div class="footer-container">
+            <p>&copy; 2026 Jaida Rhea. All rights reserved.</p>
+            <p>Clark University &middot; M.S. Climate and Society</p>
+        </div>
     </footer>
 
 </body>
