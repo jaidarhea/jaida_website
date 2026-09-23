@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications | Jaida Rhea</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --forest-green: #1f5f2f;
+            --navy-blue: #163a70;
+            --text-black: #000000;
+            --page-bg: #ffffff;
+            --border: #d9dde3;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--page-bg);
+            color: var(--text-black);
+            line-height: 1.6;
+        }
+        .site-wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px 40px; }
+        .header-photo {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 2px solid var(--border);
+            margin-bottom: 16px;
+        }
+        header nav {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        header nav a {
+            text-decoration: none;
+            color: var(--navy-blue);
+            font-weight: 700;
+            border: 1px solid var(--border);
+            padding: 8px 12px;
+            border-radius: 6px;
+        }
+        header nav a.active { background: #eef3fb; }
+        .page-title {
+            color: var(--forest-green);
+            font-weight: 700;
+            font-size: 2rem;
+            margin-bottom: 18px;
+        }
+        .publication-card {
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 18px;
+            background: #fff;
+        }
+        .section-title {
+            color: var(--navy-blue);
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        .edit-note {
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+            border-left: 4px solid var(--forest-green);
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="site-wrap">
+        <!-- HEADER PHOTO INSTRUCTIONS:
+             Upload your narrow landscape image to /images/header-banner.jpg
+             and update src below if needed. -->
+        <img src="images/header-banner.jpg" alt="Header banner image" class="header-photo">
 
+        <header>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="research.html">Research</a>
+                <a href="publications.html" class="active">Publications</a>
+                <a href="photos.html">Photos from the Field</a>
+            </nav>
+        </header>
+
+        <main>
+            <h1 class="page-title">Publications</h1>
+            <p class="edit-note">Fill in each publication title, summary, and link below.</p>
+
+            <section class="publication-card">
+                <h2 class="section-title">Publication 1: [Paper Title]</h2>
+                <p><strong>Summary:</strong> [Write a brief summary of this paper.]</p>
+                <p><strong>Publication Link:</strong> <a href="#">[Add link]</a></p>
+            </section>
+
+            <section class="publication-card">
+                <h2 class="section-title">Publication 2: [Paper Title]</h2>
+                <p><strong>Summary:</strong> [Write a brief summary of this paper.]</p>
+                <p><strong>Publication Link:</strong> <a href="#">[Add link]</a></p>
+            </section>
+
+            <section class="publication-card">
+                <h2 class="section-title">Publication 3: [Paper Title]</h2>
+                <p><strong>Summary:</strong> [Write a brief summary of this paper.]</p>
+                <p><strong>Publication Link:</strong> <a href="#">[Add link]</a></p>
+            </section>
+
+            <section class="publication-card">
+                <h2 class="section-title">Publication 4: [Paper Title]</h2>
+                <p><strong>Summary:</strong> [Write a brief summary of this paper.]</p>
+                <p><strong>Publication Link:</strong> <a href="#">[Add link]</a></p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,1 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos from the Field | Jaida Rhea</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --forest-green: #1f5f2f;
+            --navy-blue: #163a70;
+            --text-black: #000000;
+            --page-bg: #ffffff;
+            --border: #d9dde3;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--page-bg);
+            color: var(--text-black);
+            line-height: 1.6;
+        }
+        .site-wrap { max-width: 1200px; margin: 0 auto; padding: 0 20px 40px; }
+        .header-photo {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 2px solid var(--border);
+            margin-bottom: 16px;
+        }
+        header nav {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        header nav a {
+            text-decoration: none;
+            color: var(--navy-blue);
+            font-weight: 700;
+            border: 1px solid var(--border);
+            padding: 8px 12px;
+            border-radius: 6px;
+        }
+        header nav a.active { background: #eef3fb; }
+        .page-title {
+            color: var(--forest-green);
+            font-weight: 700;
+            font-size: 2rem;
+            margin-bottom: 18px;
+        }
+        .edit-note {
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+            border-left: 4px solid var(--forest-green);
+            padding-left: 10px;
+        }
+        .tab-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+        .tab-button {
+            background: #fff;
+            border: 1px solid var(--border);
+            color: var(--navy-blue);
+            font-weight: 700;
+            padding: 8px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .tab-button.active {
+            border-color: var(--navy-blue);
+            background: #eef3fb;
+        }
+        .tab-panel { display: none; }
+        .tab-panel.active { display: block; }
+        .section-title {
+            color: var(--navy-blue);
+            font-weight: 700;
+            margin-bottom: 12px;
+            font-size: 1.25rem;
+        }
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 14px;
+        }
+        .photo-card {
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 12px;
+            background: #fff;
+        }
+        .photo-card h3 {
+            color: var(--navy-blue);
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+        .photo-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="site-wrap">
+        <!-- HEADER PHOTO INSTRUCTIONS:
+             Upload your narrow landscape image to /images/header-banner.jpg
+             and update src below if needed. -->
+        <img src="images/header-banner.jpg" alt="Header banner image" class="header-photo">
 
+        <header>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="research.html">Research</a>
+                <a href="publications.html">Publications</a>
+                <a href="photos.html" class="active">Photos from the Field</a>
+            </nav>
+        </header>
+
+        <main>
+            <h1 class="page-title">Photos from the Field</h1>
+            <p class="edit-note">
+                Photo upload instructions: add files to the matching folders (for example /images/ace/, /images/monteverde/,
+                /images/utqiagvik/, /images/assateague/) and replace each image src, title, and description below.
+            </p>
+
+            <div class="tab-buttons" role="tablist">
+                <button class="tab-button active" data-tab="ace">ACE Basin National Estuarine Reserve</button>
+                <button class="tab-button" data-tab="monteverde">Monteverde, Costa Rica</button>
+                <button class="tab-button" data-tab="utqiagvik">Utqiagvik, Alaska</button>
+                <button class="tab-button" data-tab="assateague">Assateague Island</button>
+            </div>
+
+            <section id="ace" class="tab-panel active">
+                <h2 class="section-title">ACE Basin National Estuarine Reserve</h2>
+                <div class="photo-grid">
+                    <article class="photo-card"><h3>ACE Photo 1 Title</h3><img src="images/ace/ace-01.jpg" alt="ACE photo 1"><p>ACE photo 1 description.</p></article>
+                    <article class="photo-card"><h3>ACE Photo 2 Title</h3><img src="images/ace/ace-02.jpg" alt="ACE photo 2"><p>ACE photo 2 description.</p></article>
+                    <article class="photo-card"><h3>ACE Photo 3 Title</h3><img src="images/ace/ace-03.jpg" alt="ACE photo 3"><p>ACE photo 3 description.</p></article>
+                    <article class="photo-card"><h3>ACE Photo 4 Title</h3><img src="images/ace/ace-04.jpg" alt="ACE photo 4"><p>ACE photo 4 description.</p></article>
+                    <article class="photo-card"><h3>ACE Photo 5 Title</h3><img src="images/ace/ace-05.jpg" alt="ACE photo 5"><p>ACE photo 5 description.</p></article>
+                    <article class="photo-card"><h3>ACE Photo 6 Title</h3><img src="images/ace/ace-06.jpg" alt="ACE photo 6"><p>ACE photo 6 description.</p></article>
+                    <article class="photo-card"><h3>ACE Photo 7 Title</h3><img src="images/ace/ace-07.jpg" alt="ACE photo 7"><p>ACE photo 7 description.</p></article>
+                    <article class="photo-card"><h3>ACE Photo 8 Title</h3><img src="images/ace/ace-08.jpg" alt="ACE photo 8"><p>ACE photo 8 description.</p></article>
+                    <article class="photo-card"><h3>ACE Photo 9 Title</h3><img src="images/ace/ace-09.jpg" alt="ACE photo 9"><p>ACE photo 9 description.</p></article>
+                    <article class="photo-card"><h3>ACE Photo 10 Title</h3><img src="images/ace/ace-10.jpg" alt="ACE photo 10"><p>ACE photo 10 description.</p></article>
+                    <article class="photo-card"><h3>ACE Photo 11 Title</h3><img src="images/ace/ace-11.jpg" alt="ACE photo 11"><p>ACE photo 11 description.</p></article>
+                    <article class="photo-card"><h3>ACE Photo 12 Title</h3><img src="images/ace/ace-12.jpg" alt="ACE photo 12"><p>ACE photo 12 description.</p></article>
+                    <article class="photo-card"><h3>ACE Photo 13 Title</h3><img src="images/ace/ace-13.jpg" alt="ACE photo 13"><p>ACE photo 13 description.</p></article>
+                    <article class="photo-card"><h3>ACE Photo 14 Title</h3><img src="images/ace/ace-14.jpg" alt="ACE photo 14"><p>ACE photo 14 description.</p></article>
+                    <article class="photo-card"><h3>ACE Photo 15 Title</h3><img src="images/ace/ace-15.jpg" alt="ACE photo 15"><p>ACE photo 15 description.</p></article>
+                </div>
+            </section>
+
+            <section id="monteverde" class="tab-panel">
+                <h2 class="section-title">Monteverde, Costa Rica</h2>
+                <div class="photo-grid">
+                    <article class="photo-card"><h3>Monteverde Photo 1 Title</h3><img src="images/monteverde/monteverde-01.jpg" alt="Monteverde photo 1"><p>Monteverde photo 1 description.</p></article>
+                    <article class="photo-card"><h3>Monteverde Photo 2 Title</h3><img src="images/monteverde/monteverde-02.jpg" alt="Monteverde photo 2"><p>Monteverde photo 2 description.</p></article>
+                    <article class="photo-card"><h3>Monteverde Photo 3 Title</h3><img src="images/monteverde/monteverde-03.jpg" alt="Monteverde photo 3"><p>Monteverde photo 3 description.</p></article>
+                    <article class="photo-card"><h3>Monteverde Photo 4 Title</h3><img src="images/monteverde/monteverde-04.jpg" alt="Monteverde photo 4"><p>Monteverde photo 4 description.</p></article>
+                    <article class="photo-card"><h3>Monteverde Photo 5 Title</h3><img src="images/monteverde/monteverde-05.jpg" alt="Monteverde photo 5"><p>Monteverde photo 5 description.</p></article>
+                    <article class="photo-card"><h3>Monteverde Photo 6 Title</h3><img src="images/monteverde/monteverde-06.jpg" alt="Monteverde photo 6"><p>Monteverde photo 6 description.</p></article>
+                    <article class="photo-card"><h3>Monteverde Photo 7 Title</h3><img src="images/monteverde/monteverde-07.jpg" alt="Monteverde photo 7"><p>Monteverde photo 7 description.</p></article>
+                    <article class="photo-card"><h3>Monteverde Photo 8 Title</h3><img src="images/monteverde/monteverde-08.jpg" alt="Monteverde photo 8"><p>Monteverde photo 8 description.</p></article>
+                    <article class="photo-card"><h3>Monteverde Photo 9 Title</h3><img src="images/monteverde/monteverde-09.jpg" alt="Monteverde photo 9"><p>Monteverde photo 9 description.</p></article>
+                    <article class="photo-card"><h3>Monteverde Photo 10 Title</h3><img src="images/monteverde/monteverde-10.jpg" alt="Monteverde photo 10"><p>Monteverde photo 10 description.</p></article>
+                    <article class="photo-card"><h3>Monteverde Photo 11 Title</h3><img src="images/monteverde/monteverde-11.jpg" alt="Monteverde photo 11"><p>Monteverde photo 11 description.</p></article>
+                    <article class="photo-card"><h3>Monteverde Photo 12 Title</h3><img src="images/monteverde/monteverde-12.jpg" alt="Monteverde photo 12"><p>Monteverde photo 12 description.</p></article>
+                    <article class="photo-card"><h3>Monteverde Photo 13 Title</h3><img src="images/monteverde/monteverde-13.jpg" alt="Monteverde photo 13"><p>Monteverde photo 13 description.</p></article>
+                    <article class="photo-card"><h3>Monteverde Photo 14 Title</h3><img src="images/monteverde/monteverde-14.jpg" alt="Monteverde photo 14"><p>Monteverde photo 14 description.</p></article>
+                    <article class="photo-card"><h3>Monteverde Photo 15 Title</h3><img src="images/monteverde/monteverde-15.jpg" alt="Monteverde photo 15"><p>Monteverde photo 15 description.</p></article>
+                </div>
+            </section>
+
+            <section id="utqiagvik" class="tab-panel">
+                <h2 class="section-title">Utqiagvik, Alaska</h2>
+                <div class="photo-grid">
+                    <article class="photo-card"><h3>Utqiagvik Photo 1 Title</h3><img src="images/utqiagvik/utqiagvik-01.jpg" alt="Utqiagvik photo 1"><p>Utqiagvik photo 1 description.</p></article>
+                    <article class="photo-card"><h3>Utqiagvik Photo 2 Title</h3><img src="images/utqiagvik/utqiagvik-02.jpg" alt="Utqiagvik photo 2"><p>Utqiagvik photo 2 description.</p></article>
+                    <article class="photo-card"><h3>Utqiagvik Photo 3 Title</h3><img src="images/utqiagvik/utqiagvik-03.jpg" alt="Utqiagvik photo 3"><p>Utqiagvik photo 3 description.</p></article>
+                    <article class="photo-card"><h3>Utqiagvik Photo 4 Title</h3><img src="images/utqiagvik/utqiagvik-04.jpg" alt="Utqiagvik photo 4"><p>Utqiagvik photo 4 description.</p></article>
+                    <article class="photo-card"><h3>Utqiagvik Photo 5 Title</h3><img src="images/utqiagvik/utqiagvik-05.jpg" alt="Utqiagvik photo 5"><p>Utqiagvik photo 5 description.</p></article>
+                    <article class="photo-card"><h3>Utqiagvik Photo 6 Title</h3><img src="images/utqiagvik/utqiagvik-06.jpg" alt="Utqiagvik photo 6"><p>Utqiagvik photo 6 description.</p></article>
+                    <article class="photo-card"><h3>Utqiagvik Photo 7 Title</h3><img src="images/utqiagvik/utqiagvik-07.jpg" alt="Utqiagvik photo 7"><p>Utqiagvik photo 7 description.</p></article>
+                    <article class="photo-card"><h3>Utqiagvik Photo 8 Title</h3><img src="images/utqiagvik/utqiagvik-08.jpg" alt="Utqiagvik photo 8"><p>Utqiagvik photo 8 description.</p></article>
+                    <article class="photo-card"><h3>Utqiagvik Photo 9 Title</h3><img src="images/utqiagvik/utqiagvik-09.jpg" alt="Utqiagvik photo 9"><p>Utqiagvik photo 9 description.</p></article>
+                    <article class="photo-card"><h3>Utqiagvik Photo 10 Title</h3><img src="images/utqiagvik/utqiagvik-10.jpg" alt="Utqiagvik photo 10"><p>Utqiagvik photo 10 description.</p></article>
+                    <article class="photo-card"><h3>Utqiagvik Photo 11 Title</h3><img src="images/utqiagvik/utqiagvik-11.jpg" alt="Utqiagvik photo 11"><p>Utqiagvik photo 11 description.</p></article>
+                    <article class="photo-card"><h3>Utqiagvik Photo 12 Title</h3><img src="images/utqiagvik/utqiagvik-12.jpg" alt="Utqiagvik photo 12"><p>Utqiagvik photo 12 description.</p></article>
+                    <article class="photo-card"><h3>Utqiagvik Photo 13 Title</h3><img src="images/utqiagvik/utqiagvik-13.jpg" alt="Utqiagvik photo 13"><p>Utqiagvik photo 13 description.</p></article>
+                    <article class="photo-card"><h3>Utqiagvik Photo 14 Title</h3><img src="images/utqiagvik/utqiagvik-14.jpg" alt="Utqiagvik photo 14"><p>Utqiagvik photo 14 description.</p></article>
+                    <article class="photo-card"><h3>Utqiagvik Photo 15 Title</h3><img src="images/utqiagvik/utqiagvik-15.jpg" alt="Utqiagvik photo 15"><p>Utqiagvik photo 15 description.</p></article>
+                </div>
+            </section>
+
+            <section id="assateague" class="tab-panel">
+                <h2 class="section-title">Assateague Island</h2>
+                <div class="photo-grid">
+                    <article class="photo-card"><h3>Assateague Photo 1 Title</h3><img src="images/assateague/assateague-01.jpg" alt="Assateague photo 1"><p>Assateague photo 1 description.</p></article>
+                    <article class="photo-card"><h3>Assateague Photo 2 Title</h3><img src="images/assateague/assateague-02.jpg" alt="Assateague photo 2"><p>Assateague photo 2 description.</p></article>
+                    <article class="photo-card"><h3>Assateague Photo 3 Title</h3><img src="images/assateague/assateague-03.jpg" alt="Assateague photo 3"><p>Assateague photo 3 description.</p></article>
+                    <article class="photo-card"><h3>Assateague Photo 4 Title</h3><img src="images/assateague/assateague-04.jpg" alt="Assateague photo 4"><p>Assateague photo 4 description.</p></article>
+                    <article class="photo-card"><h3>Assateague Photo 5 Title</h3><img src="images/assateague/assateague-05.jpg" alt="Assateague photo 5"><p>Assateague photo 5 description.</p></article>
+                    <article class="photo-card"><h3>Assateague Photo 6 Title</h3><img src="images/assateague/assateague-06.jpg" alt="Assateague photo 6"><p>Assateague photo 6 description.</p></article>
+                    <article class="photo-card"><h3>Assateague Photo 7 Title</h3><img src="images/assateague/assateague-07.jpg" alt="Assateague photo 7"><p>Assateague photo 7 description.</p></article>
+                    <article class="photo-card"><h3>Assateague Photo 8 Title</h3><img src="images/assateague/assateague-08.jpg" alt="Assateague photo 8"><p>Assateague photo 8 description.</p></article>
+                    <article class="photo-card"><h3>Assateague Photo 9 Title</h3><img src="images/assateague/assateague-09.jpg" alt="Assateague photo 9"><p>Assateague photo 9 description.</p></article>
+                    <article class="photo-card"><h3>Assateague Photo 10 Title</h3><img src="images/assateague/assateague-10.jpg" alt="Assateague photo 10"><p>Assateague photo 10 description.</p></article>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabPanels = document.querySelectorAll('.tab-panel');
+
+        tabButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+                const targetId = button.dataset.tab;
+
+                tabButtons.forEach((btn) => btn.classList.remove('active'));
+                tabPanels.forEach((panel) => panel.classList.remove('active'));
+
+                button.classList.add('active');
+                document.getElementById(targetId).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
