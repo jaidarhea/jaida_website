@@ -81,32 +81,42 @@
             margin-bottom: 12px;
             font-size: 1.25rem;
         }
+        /* Two photos per row on wider screens; stacks to one column on narrow screens */
         .photo-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-            gap: 14px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+        @media (max-width: 640px) {
+            .photo-grid {
+                grid-template-columns: 1fr;
+            }
         }
         .photo-card {
             border: 1px solid var(--border);
             border-radius: 10px;
-            padding: 12px;
+            padding: 14px;
             background: #fff;
         }
         .photo-card h3 {
             color: var(--navy-blue);
             font-weight: 700;
-            font-size: 1rem;
-            margin-bottom: 8px;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
         }
         .photo-card img {
             width: 100%;
-            aspect-ratio: 2 / 3;
             height: auto;
-            object-fit: cover;
+            max-height: 480px;
+            object-fit: contain;
             display: block;
             border: 1px solid var(--border);
             border-radius: 6px;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+            background: #f7f7f7;
+        }
+        .photo-card p {
+            font-size: 1rem;
         }
     </style>
 </head>
