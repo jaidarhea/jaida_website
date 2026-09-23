@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publications | Jaida Rhea</title>
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        * { box-sizing: border-box; }
         :root {
             --forest-green: #1f5f2f;
             --navy-blue: #163a70;
             --text-black: #000000;
             --page-bg: #ffffff;
             --border: #d9dde3;
+            --focus: #2f80ed;
         }
         body {
+            margin: 0;
             font-family: Arial, Helvetica, sans-serif;
             background: var(--page-bg);
             color: var(--text-black);
@@ -24,94 +27,107 @@
             width: 100%;
             height: 180px;
             object-fit: cover;
+            display: block;
             border-bottom: 2px solid var(--border);
             margin-bottom: 16px;
         }
-        header nav {
+        nav {
             display: flex;
-            gap: 14px;
             flex-wrap: wrap;
+            gap: 12px;
             margin-bottom: 20px;
         }
-        header nav a {
+        nav a {
             text-decoration: none;
             color: var(--navy-blue);
             font-weight: 700;
             border: 1px solid var(--border);
-            padding: 8px 12px;
             border-radius: 6px;
+            padding: 8px 12px;
         }
-        header nav a.active { background: #eef3fb; }
+        nav a.active { background: #eef3fb; }
+        nav a:focus-visible, button:focus-visible {
+            outline: 3px solid var(--focus);
+            outline-offset: 2px;
+        }
         .page-title {
             color: var(--forest-green);
-            font-weight: 700;
             font-size: 2rem;
-            margin-bottom: 18px;
+            font-weight: 700;
+            margin: 0 0 18px;
         }
-        .publication-card {
+        .card {
             border: 1px solid var(--border);
             border-radius: 10px;
             padding: 20px;
-            margin-bottom: 18px;
             background: #fff;
+            margin-bottom: 18px;
         }
         .section-title {
             color: var(--navy-blue);
+            font-size: 1.25rem;
             font-weight: 700;
-            margin-bottom: 10px;
-            font-size: 1.2rem;
+            margin: 0 0 10px;
         }
         .edit-note {
-            font-size: 0.95rem;
-            margin-bottom: 12px;
+            margin: 0 0 12px;
             border-left: 4px solid var(--forest-green);
             padding-left: 10px;
         }
+        p { margin: 0 0 10px; }
+        @media (max-width: 640px) {
+            .site-wrap { padding: 0 14px 30px; }
+            .header-photo { height: 130px; }
+        }
+
     </style>
 </head>
 <body>
     <div class="site-wrap">
-        <!-- HEADER PHOTO INSTRUCTIONS:
-             1) The site currently uses the GitHub-hosted image link below as the shared header photo.
-             2) To replace it later, upload a narrow landscape image and swap the src value below. -->
-        <img src="photos/header-photo.png" alt="Header banner image" class="header-photo">
-
+        <!-- HEADER IMAGE INSTRUCTIONS:
+             1) Keep your shared narrow landscape banner image in /photos/header-photo.png.
+             2) To replace it, upload a new file to that same path OR update the src below to another relative path.
+             3) Keep a descriptive alt text for accessibility. -->
+        <img src="photos/header-photo.png" alt="Website header landscape banner" class="header-photo">
         <header>
-            <nav>
+            <nav aria-label="Primary">
                 <a href="index.html">Home</a>
                 <a href="research.html">Research</a>
-                <a href="publications.html" class="active">Publications</a>
+                <a href="publications.html" class="active" aria-current="page">Publications</a>
                 <a href="photos.html">Photos from the Field</a>
             </nav>
         </header>
-
         <main>
             <h1 class="page-title">Publications</h1>
-            <p class="edit-note">Fill in each publication title, summary, and link below.</p>
-
-            <section class="publication-card">
-                <h2 class="section-title">Publication 1: [Paper Title]</h2>
-                <p><strong>Summary:</strong> [Write a brief summary of this paper.]</p>
-                <p><strong>Publication Link:</strong> <a href="#">[Add link]</a></p>
+            <!-- PUBLICATION 1: Replace title, summary, and link placeholders -->
+            <section class="card">
+                <h2 class="section-title">Publication 1 Title: [Add paper title]</h2>
+                <p><strong>Summary:</strong> [Add a short summary of this paper.]</p>
+                <!-- PUBLICATION LINK INSTRUCTIONS: Replace href="#" with DOI, journal URL, or file path. -->
+                <p><strong>Publication Link:</strong> <a href="#">[Add publication link]</a></p>
+            </section>
+            <!-- PUBLICATION 2: Replace title, summary, and link placeholders -->
+            <section class="card">
+                <h2 class="section-title">Publication 2 Title: [Add paper title]</h2>
+                <p><strong>Summary:</strong> [Add a short summary of this paper.]</p>
+                <!-- PUBLICATION LINK INSTRUCTIONS: Replace href="#" with DOI, journal URL, or file path. -->
+                <p><strong>Publication Link:</strong> <a href="#">[Add publication link]</a></p>
+            </section>
+            <!-- PUBLICATION 3: Replace title, summary, and link placeholders -->
+            <section class="card">
+                <h2 class="section-title">Publication 3 Title: [Add paper title]</h2>
+                <p><strong>Summary:</strong> [Add a short summary of this paper.]</p>
+                <!-- PUBLICATION LINK INSTRUCTIONS: Replace href="#" with DOI, journal URL, or file path. -->
+                <p><strong>Publication Link:</strong> <a href="#">[Add publication link]</a></p>
+            </section>
+            <!-- PUBLICATION 4: Replace title, summary, and link placeholders -->
+            <section class="card">
+                <h2 class="section-title">Publication 4 Title: [Add paper title]</h2>
+                <p><strong>Summary:</strong> [Add a short summary of this paper.]</p>
+                <!-- PUBLICATION LINK INSTRUCTIONS: Replace href="#" with DOI, journal URL, or file path. -->
+                <p><strong>Publication Link:</strong> <a href="#">[Add publication link]</a></p>
             </section>
 
-            <section class="publication-card">
-                <h2 class="section-title">Publication 2: [Paper Title]</h2>
-                <p><strong>Summary:</strong> [Write a brief summary of this paper.]</p>
-                <p><strong>Publication Link:</strong> <a href="#">[Add link]</a></p>
-            </section>
-
-            <section class="publication-card">
-                <h2 class="section-title">Publication 3: [Paper Title]</h2>
-                <p><strong>Summary:</strong> [Write a brief summary of this paper.]</p>
-                <p><strong>Publication Link:</strong> <a href="#">[Add link]</a></p>
-            </section>
-
-            <section class="publication-card">
-                <h2 class="section-title">Publication 4: [Paper Title]</h2>
-                <p><strong>Summary:</strong> [Write a brief summary of this paper.]</p>
-                <p><strong>Publication Link:</strong> <a href="#">[Add link]</a></p>
-            </section>
         </main>
     </div>
 </body>

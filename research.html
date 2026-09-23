@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research | Jaida Rhea</title>
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        * { box-sizing: border-box; }
         :root {
             --forest-green: #1f5f2f;
             --navy-blue: #163a70;
             --text-black: #000000;
             --page-bg: #ffffff;
             --border: #d9dde3;
+            --focus: #2f80ed;
         }
         body {
+            margin: 0;
             font-family: Arial, Helvetica, sans-serif;
             background: var(--page-bg);
             color: var(--text-black);
@@ -24,133 +27,142 @@
             width: 100%;
             height: 180px;
             object-fit: cover;
+            display: block;
             border-bottom: 2px solid var(--border);
             margin-bottom: 16px;
         }
-        header nav {
+        nav {
             display: flex;
-            gap: 14px;
             flex-wrap: wrap;
+            gap: 12px;
             margin-bottom: 20px;
         }
-        header nav a {
+        nav a {
             text-decoration: none;
             color: var(--navy-blue);
             font-weight: 700;
             border: 1px solid var(--border);
-            padding: 8px 12px;
             border-radius: 6px;
+            padding: 8px 12px;
         }
-        header nav a.active { background: #eef3fb; }
+        nav a.active { background: #eef3fb; }
+        nav a:focus-visible, button:focus-visible {
+            outline: 3px solid var(--focus);
+            outline-offset: 2px;
+        }
         .page-title {
             color: var(--forest-green);
-            font-weight: 700;
             font-size: 2rem;
-            margin-bottom: 18px;
-        }
-        .section-title {
-            color: var(--navy-blue);
             font-weight: 700;
-            margin-bottom: 10px;
-            font-size: 1.25rem;
+            margin: 0 0 18px;
         }
         .card {
             border: 1px solid var(--border);
             border-radius: 10px;
             padding: 20px;
-            margin-bottom: 18px;
             background: #fff;
+            margin-bottom: 18px;
+        }
+        .section-title {
+            color: var(--navy-blue);
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 0 0 10px;
         }
         .edit-note {
-            font-size: 0.95rem;
-            margin-bottom: 10px;
+            margin: 0 0 12px;
             border-left: 4px solid var(--forest-green);
             padding-left: 10px;
         }
-        ul { padding-left: 20px; }
+        p { margin: 0 0 10px; }
+        @media (max-width: 640px) {
+            .site-wrap { padding: 0 14px 30px; }
+            .header-photo { height: 130px; }
+        }
+
+        ul { margin: 0; padding-left: 22px; }
     </style>
 </head>
 <body>
     <div class="site-wrap">
-        <!-- HEADER PHOTO INSTRUCTIONS:
-             1) The site currently uses the GitHub-hosted image link below as the shared header photo.
-             2) To replace it later, upload a narrow landscape image and swap the src value below. -->
-        <img src="photos/header-photo.png" alt="Header banner image" class="header-photo">
-
+        <!-- HEADER IMAGE INSTRUCTIONS:
+             1) Keep your shared narrow landscape banner image in /photos/header-photo.png.
+             2) To replace it, upload a new file to that same path OR update the src below to another relative path.
+             3) Keep a descriptive alt text for accessibility. -->
+        <img src="photos/header-photo.png" alt="Website header landscape banner" class="header-photo">
         <header>
-            <nav>
+            <nav aria-label="Primary">
                 <a href="index.html">Home</a>
-                <a href="research.html" class="active">Research</a>
+                <a href="research.html" class="active" aria-current="page">Research</a>
                 <a href="publications.html">Publications</a>
                 <a href="photos.html">Photos from the Field</a>
             </nav>
         </header>
-
         <main>
             <h1 class="page-title">Research</h1>
-
             <section class="card">
                 <h2 class="section-title">Curriculum Vitae (CV)</h2>
-                <p class="edit-note">Replace the placeholder link below with your uploaded CV file link.</p>
+                <p class="edit-note">Upload your CV file and update the link below.</p>
                 <!-- CV LINK INSTRUCTIONS:
-                     1) Upload your CV PDF (example: /files/jaida-rhea-cv.pdf)
-                     2) Replace href="#" with your file path or external link. -->
-                <p><a href="#">[Link to CV]</a></p>
+                     1) Upload your CV (example: /files/jaida-rhea-cv.pdf).
+                     2) Replace href="#" with your relative file path or full URL.
+                     3) Update the link text if you want a custom label. -->
+                <p><a href="#">[View CV]</a></p>
+            </section>
+            <!-- RESEARCH EXPERIENCE 1: Replace placeholders in this card -->
+            <section class="card">
+                <h2 class="section-title">Experience 1 Title: [Add title]</h2>
+                <p><strong>Location:</strong> [Add location]</p>
+                <p><strong>Dates:</strong> [Add dates]</p>
+                <p><strong>Advisors:</strong> [Add advisor names]</p>
+                <p><strong>Summary:</strong> [Add a brief summary of this research experience.]</p>
+                <!-- DELIVERABLE LINK INSTRUCTIONS: Replace href="#" with your file link or URL. -->
+                <p><strong>Deliverable:</strong> <a href="#">[Add deliverable link]</a></p>
+            </section>
+            <!-- RESEARCH EXPERIENCE 2: Replace placeholders in this card -->
+            <section class="card">
+                <h2 class="section-title">Experience 2 Title: [Add title]</h2>
+                <p><strong>Location:</strong> [Add location]</p>
+                <p><strong>Dates:</strong> [Add dates]</p>
+                <p><strong>Advisors:</strong> [Add advisor names]</p>
+                <p><strong>Summary:</strong> [Add a brief summary of this research experience.]</p>
+                <!-- DELIVERABLE LINK INSTRUCTIONS: Replace href="#" with your file link or URL. -->
+                <p><strong>Deliverable:</strong> <a href="#">[Add deliverable link]</a></p>
+            </section>
+            <!-- RESEARCH EXPERIENCE 3: Replace placeholders in this card -->
+            <section class="card">
+                <h2 class="section-title">Experience 3 Title: [Add title]</h2>
+                <p><strong>Location:</strong> [Add location]</p>
+                <p><strong>Dates:</strong> [Add dates]</p>
+                <p><strong>Advisors:</strong> [Add advisor names]</p>
+                <p><strong>Summary:</strong> [Add a brief summary of this research experience.]</p>
+                <!-- DELIVERABLE LINK INSTRUCTIONS: Replace href="#" with your file link or URL. -->
+                <p><strong>Deliverable:</strong> <a href="#">[Add deliverable link]</a></p>
+            </section>
+            <!-- RESEARCH EXPERIENCE 4: Replace placeholders in this card -->
+            <section class="card">
+                <h2 class="section-title">Experience 4 Title: [Add title]</h2>
+                <p><strong>Location:</strong> [Add location]</p>
+                <p><strong>Dates:</strong> [Add dates]</p>
+                <p><strong>Advisors:</strong> [Add advisor names]</p>
+                <p><strong>Summary:</strong> [Add a brief summary of this research experience.]</p>
+                <!-- DELIVERABLE LINK INSTRUCTIONS: Replace href="#" with your file link or URL. -->
+                <p><strong>Deliverable:</strong> <a href="#">[Add deliverable link]</a></p>
+            </section>
+            <!-- RESEARCH EXPERIENCE 5: Replace placeholders in this card -->
+            <section class="card">
+                <h2 class="section-title">Experience 5 Title: [Add title]</h2>
+                <p><strong>Location:</strong> [Add location]</p>
+                <p><strong>Dates:</strong> [Add dates]</p>
+                <p><strong>Advisors:</strong> [Add advisor names]</p>
+                <p><strong>Summary:</strong> [Add a brief summary of this research experience.]</p>
+                <!-- DELIVERABLE LINK INSTRUCTIONS: Replace href="#" with your file link or URL. -->
+                <p><strong>Deliverable:</strong> <a href="#">[Add deliverable link]</a></p>
             </section>
 
-            <!-- RESEARCH EXPERIENCE 1 -->
             <section class="card">
-                <h2 class="section-title">Research Experience 1: [Title]</h2>
-                <p><strong>Location:</strong> [Location]</p>
-                <p><strong>Dates:</strong> [Dates]</p>
-                <p><strong>Advisors:</strong> [Advisor Name(s)]</p>
-                <p><strong>Summary:</strong> [Brief summary of this research experience.]</p>
-                <p><strong>Deliverable Link:</strong> <a href="#">[Add link]</a></p>
-            </section>
-
-            <!-- RESEARCH EXPERIENCE 2 -->
-            <section class="card">
-                <h2 class="section-title">Research Experience 2: [Title]</h2>
-                <p><strong>Location:</strong> [Location]</p>
-                <p><strong>Dates:</strong> [Dates]</p>
-                <p><strong>Advisors:</strong> [Advisor Name(s)]</p>
-                <p><strong>Summary:</strong> [Brief summary of this research experience.]</p>
-                <p><strong>Deliverable Link:</strong> <a href="#">[Add link]</a></p>
-            </section>
-
-            <!-- RESEARCH EXPERIENCE 3 -->
-            <section class="card">
-                <h2 class="section-title">Research Experience 3: [Title]</h2>
-                <p><strong>Location:</strong> [Location]</p>
-                <p><strong>Dates:</strong> [Dates]</p>
-                <p><strong>Advisors:</strong> [Advisor Name(s)]</p>
-                <p><strong>Summary:</strong> [Brief summary of this research experience.]</p>
-                <p><strong>Deliverable Link:</strong> <a href="#">[Add link]</a></p>
-            </section>
-
-            <!-- RESEARCH EXPERIENCE 4 -->
-            <section class="card">
-                <h2 class="section-title">Research Experience 4: [Title]</h2>
-                <p><strong>Location:</strong> [Location]</p>
-                <p><strong>Dates:</strong> [Dates]</p>
-                <p><strong>Advisors:</strong> [Advisor Name(s)]</p>
-                <p><strong>Summary:</strong> [Brief summary of this research experience.]</p>
-                <p><strong>Deliverable Link:</strong> <a href="#">[Add link]</a></p>
-            </section>
-
-            <!-- RESEARCH EXPERIENCE 5 -->
-            <section class="card">
-                <h2 class="section-title">Research Experience 5: [Title]</h2>
-                <p><strong>Location:</strong> [Location]</p>
-                <p><strong>Dates:</strong> [Dates]</p>
-                <p><strong>Advisors:</strong> [Advisor Name(s)]</p>
-                <p><strong>Summary:</strong> [Brief summary of this research experience.]</p>
-                <p><strong>Deliverable Link:</strong> <a href="#">[Add link]</a></p>
-            </section>
-
-            <section class="card">
-                <h2 class="section-title">Field Techniques / Equipment Experience</h2>
-                <p class="edit-note">Replace or expand this list with your techniques and equipment skills.</p>
+                <h2 class="section-title">Field Techniques / Equipment</h2>
+                <p class="edit-note">Replace these placeholders with your techniques, software, lab/field equipment, and certifications.</p>
                 <ul>
                     <li>[Technique / Equipment 1]</li>
                     <li>[Technique / Equipment 2]</li>
