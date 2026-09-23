@@ -54,13 +54,32 @@
             padding: 20px;
             background: #fff;
         }
+        .profile-photos {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 22px;
+        }
+
         .profile-photo {
-            width: 100%;
-            max-width: 320px;
+            width: calc((100% - 32px) / 3);
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
             border-radius: 10px;
             border: 1px solid var(--border);
-            margin-bottom: 18px;
-            object-fit: cover;
+        }
+
+        /* On smaller screens, stack the photos more comfortably */
+        @media (max-width: 700px) {
+            .profile-photo {
+                width: calc((100% - 16px) / 2);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .profile-photo {
+                width: 100%;
+            }
         }
         .section-title {
             color: var(--navy-blue);
@@ -96,14 +115,37 @@
             <h1 class="page-title">Home</h1>
 
             <section class="content-card">
-                <!-- PROFILE PHOTO INSTRUCTIONS:
-                     1) Upload your headshot to /images/profile-photo.jpg
-                     2) Replace src below if your file name/path is different. -->
-                <img src="photos/about-photo.jpg" alt="Profile photo placeholder" class="profile-photo">
+            <!-- PROFILE PHOTO INSTRUCTIONS:
+                1) Upload your three photos to the /photos/ folder in your repository.
+                2) Name them about-photo-1.jpg, about-photo-2.jpg, and about-photo-3.jpg.
+                3) If you use different names or file types, update the src values below.
+                4) The three photos will appear in a horizontal row on larger screens. -->
 
+        <div class="profile-photos">
+            <img src="photos/about-photo-1.jpg"
+                 alt="Description of profile photo one"
+                 class="profile-photo">
+
+            <img src="photos/about-photo-2.jpg"
+                 alt="Description of profile photo two"
+                 class="profile-photo">
+
+            <img src="photos/about-photo-3.jpg"
+                 alt="Description of profile photo three"
+                 class="profile-photo">
+        </div>
                 <h2 class="section-title">About Me</h2>
-                <p class="edit-note">Edit the title and summary text below with your preferred bio details.</p>
 
+                <p class="edit-note">
+                 Edit the title and summary text below with your preferred bio details.
+                </p>
+
+                <h3 class="section-title">[Your Name and Professional Title Here]</h3>
+
+                <p>
+                [Write your summary here. You can include your current program, research interests,
+                and professional goals.]
+                </p>
                 <!-- EDIT THIS TITLE -->
                 <h3 class="section-title">[Your Name and Professional Title Here]</h3>
 
