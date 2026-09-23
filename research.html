@@ -3,204 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research | Jaida Lamela Rhea</title>
+    <title>Research | Jaida Rhea</title>
     <style>
-        /* Precision Academic Grid & Theme Setup */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
         :root {
-            --primary: #1b362c;     /* Deep Scholar Forest Green */
-            --accent: #b45309;      /* Muted Amber/Ochre */
-            --bg-body: #fbfbf9;     /* Ultra-light Crisp Parchment */
-            --text-dark: #27272a;   /* Deep Slate for High-Contrast Text */
-            --border-muted: #e4e4e7;/* Clean Structural Lines */
+            --forest-green: #1f5f2f;
+            --navy-blue: #163a70;
+            --text-black: #000000;
+            --page-bg: #ffffff;
+            --border: #d9dde3;
         }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.75;
-            color: var(--text-dark);
-            background-color: var(--bg-body);
-            -webkit-font-smoothing: antialiased;
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--page-bg);
+            color: var(--text-black);
+            line-height: 1.6;
         }
-
-        /* Structured Academic Header Block */
-        header {
-            background-color: #fff;
-            border-bottom: 1px solid var(--border-muted);
-            padding: 35px 0;
+        .site-wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px 40px; }
+        .header-photo {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 2px solid var(--border);
+            margin-bottom: 16px;
         }
-        .header-container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 0 30px;
+        header nav {
             display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
+            gap: 14px;
             flex-wrap: wrap;
-            gap: 20px;
+            margin-bottom: 20px;
         }
-        .branding h1 {
-            font-size: 2.1rem;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-            color: var(--primary);
-            line-height: 1.1;
-        }
-        .branding p {
-            font-size: 0.95rem;
-            color: #6b7280;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-top: 8px;
-            font-weight: 500;
-        }
-
-        /* Navigation Row */
-        nav {
-            display: flex;
-            gap: 28px;
-        }
-        nav a {
-            color: #4b5563;
+        header nav a {
             text-decoration: none;
-            font-weight: 500;
-            font-size: 1rem;
-            padding-bottom: 6px;
-            transition: color 0.2s ease;
+            color: var(--navy-blue);
+            font-weight: 700;
+            border: 1px solid var(--border);
+            padding: 8px 12px;
+            border-radius: 6px;
         }
-        nav a:hover {
-            color: var(--primary);
-        }
-        nav a.active {
-            color: var(--primary);
-            font-weight: 600;
-            border-bottom: 2px solid var(--primary);
-        }
-
-        /* Layout Container */
-        .main-container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 50px 30px 80px 30px;
-        }
-        
+        header nav a.active { background: #eef3fb; }
         .page-title {
-            font-size: 1.8rem;
-            font-weight: 600;
-            color: var(--primary);
-            margin-bottom: 30px;
-            border-bottom: 2px solid var(--primary);
-            padding-bottom: 8px;
+            color: var(--forest-green);
+            font-weight: 700;
+            font-size: 2rem;
+            margin-bottom: 18px;
         }
-
-        /* Research Project Layout Blocks */
-        .project-block {
-            background-color: #fff;
-            border: 1px solid var(--border-muted);
-            padding: 30px;
-            margin-bottom: 30px;
+        .section-title {
+            color: var(--navy-blue);
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 1.25rem;
         }
-        .project-meta {
-            font-size: 0.9rem;
-            color: var(--accent);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            font-weight: 600;
-            margin-bottom: 5px;
+        .card {
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 18px;
+            background: #fff;
         }
-        .project-block h3 {
-            font-size: 1.4rem;
-            color: #111;
-            margin-bottom: 12px;
+        .edit-note {
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+            border-left: 4px solid var(--forest-green);
+            padding-left: 10px;
         }
-        .project-block p {
-            font-size: 1.05rem;
-            text-align: justify;
-            margin-bottom: 15px;
-        }
-        .methods-tag {
-            display: inline-block;
-            background-color: #f4f4f5;
-            color: #4b5563;
-            padding: 4px 10px;
-            font-size: 0.85rem;
-            border-radius: 4px;
-            margin-right: 8px;
-            margin-top: 5px;
-            border: 1px solid #e4e4e7;
-        }
-
-        /* Tailored Academic Footer */
-        footer {
-            background-color: #fff;
-            border-top: 1px solid var(--border-muted);
-            padding: 30px 0;
-            margin-top: auto;
-        }
-        .footer-container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 0 30px;
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.85rem;
-            color: #6b7280;
-        }
+        ul { padding-left: 20px; }
     </style>
 </head>
 <body>
+    <div class="site-wrap">
+        <!-- HEADER PHOTO INSTRUCTIONS:
+             Upload your narrow landscape image to /images/header-banner.jpg
+             and update src below if needed. -->
+        <img src="images/header-banner.jpg" alt="Header banner image" class="header-photo">
 
-    <!-- Main Navigation Architecture -->
-    <header>
-        <div class="header-container">
-            <div class="branding">
-                <h1>Jaida Rhea</h1>
-                <p>Climate Change, Remote Sensing, and the Arctic</p>
-            </div>
+        <header>
             <nav>
-                <a href="index.html">About</a>
+                <a href="index.html">Home</a>
                 <a href="research.html" class="active">Research</a>
                 <a href="publications.html">Publications</a>
-                <a href="photos.html">Field Work</a>
+                <a href="photos.html">Photos from the Field</a>
             </nav>
-        </div>
-    </header>
+        </header>
 
-    <!-- Content Workspace -->
-    <main class="main-container">
-        <h2 class="page-title">Current & Past Research</h2>
-        
-        <!-- Project 1 -->
-        <div class="project-block">
-            <div class="project-meta">Polar Science Research Laboratory &middot; Clark University</div>
-            <h3>Distributed Biological Observatory</h3>
-            <p>
-                My research in Clark University's Polar Science Research Laboratory under the mentorship of Dr. Karen Frey is focused on the Distributed Biological Observatory (DBO), which is a change detection array in the Pacific Arctic region. The DBO was created to track the broad biological responsse to sea ice retreat and associated environmental change in the region, and includes selected biological measurements at multiple trophic levels alongside hydrographic measurements and satellite observations. Specifically, my role includes comparing NASA's PACE-OCI (Plankton, Aerosol, Cloud, and ocean Ecosystem-Ocean Color Instrument) ocean color data with NASA's Aqua-MODIS (Moderate Resolution Imaging Spectroradiometer) ocean color data.
-            </p>
-            <div>
-        </div>
+        <main>
+            <h1 class="page-title">Research</h1>
 
-        <!-- Project 2 -->
-        <div class="project-block">
-            <div class="project-meta">Naval Research Enterprise Internship Program (NREIP) &middot; U.S. Naval Research Laboratory</div>
-            <h3>Vegetation Phenology in the High-Arctic Tundra</h3>
-            <p>
-                As an NREIP participant at the U.S. Naval Research Laboratory, I am examining seasonal vegetation dynamics in the high-Arctic tundra ecosystem of Utqiaġvik, Alaska using a 12-year record of PhenoCam-derived Green Chromatic Coordinate (GCC) and Normalized Difference Vegetation Index (NDVI).
-            </p>
-            </div>
-        </div>
-    </main>
+            <section class="card">
+                <h2 class="section-title">Curriculum Vitae (CV)</h2>
+                <p class="edit-note">Replace the placeholder link below with your uploaded CV file link.</p>
+                <!-- CV LINK INSTRUCTIONS:
+                     1) Upload your CV PDF (example: /files/jaida-rhea-cv.pdf)
+                     2) Replace href="#" with your file path or external link. -->
+                <p><a href="#">[Link to CV]</a></p>
+            </section>
 
-    <!-- Structural Institutional Footer -->
-    <footer>
-        <div class="footer-container">
-            <p>&copy; 2026 Jaida Rhea. All rights reserved.</p>
-            <p>Clark University &middot; M.S. Climate and Society</p>
-        </div>
-    </footer>
+            <!-- RESEARCH EXPERIENCE 1 -->
+            <section class="card">
+                <h2 class="section-title">Research Experience 1: [Title]</h2>
+                <p><strong>Location:</strong> [Location]</p>
+                <p><strong>Dates:</strong> [Dates]</p>
+                <p><strong>Advisors:</strong> [Advisor Name(s)]</p>
+                <p><strong>Summary:</strong> [Brief summary of this research experience.]</p>
+                <p><strong>Deliverable Link:</strong> <a href="#">[Add link]</a></p>
+            </section>
 
+            <!-- RESEARCH EXPERIENCE 2 -->
+            <section class="card">
+                <h2 class="section-title">Research Experience 2: [Title]</h2>
+                <p><strong>Location:</strong> [Location]</p>
+                <p><strong>Dates:</strong> [Dates]</p>
+                <p><strong>Advisors:</strong> [Advisor Name(s)]</p>
+                <p><strong>Summary:</strong> [Brief summary of this research experience.]</p>
+                <p><strong>Deliverable Link:</strong> <a href="#">[Add link]</a></p>
+            </section>
+
+            <!-- RESEARCH EXPERIENCE 3 -->
+            <section class="card">
+                <h2 class="section-title">Research Experience 3: [Title]</h2>
+                <p><strong>Location:</strong> [Location]</p>
+                <p><strong>Dates:</strong> [Dates]</p>
+                <p><strong>Advisors:</strong> [Advisor Name(s)]</p>
+                <p><strong>Summary:</strong> [Brief summary of this research experience.]</p>
+                <p><strong>Deliverable Link:</strong> <a href="#">[Add link]</a></p>
+            </section>
+
+            <!-- RESEARCH EXPERIENCE 4 -->
+            <section class="card">
+                <h2 class="section-title">Research Experience 4: [Title]</h2>
+                <p><strong>Location:</strong> [Location]</p>
+                <p><strong>Dates:</strong> [Dates]</p>
+                <p><strong>Advisors:</strong> [Advisor Name(s)]</p>
+                <p><strong>Summary:</strong> [Brief summary of this research experience.]</p>
+                <p><strong>Deliverable Link:</strong> <a href="#">[Add link]</a></p>
+            </section>
+
+            <!-- RESEARCH EXPERIENCE 5 -->
+            <section class="card">
+                <h2 class="section-title">Research Experience 5: [Title]</h2>
+                <p><strong>Location:</strong> [Location]</p>
+                <p><strong>Dates:</strong> [Dates]</p>
+                <p><strong>Advisors:</strong> [Advisor Name(s)]</p>
+                <p><strong>Summary:</strong> [Brief summary of this research experience.]</p>
+                <p><strong>Deliverable Link:</strong> <a href="#">[Add link]</a></p>
+            </section>
+
+            <section class="card">
+                <h2 class="section-title">Field Techniques / Equipment Experience</h2>
+                <p class="edit-note">Replace or expand this list with your techniques and equipment skills.</p>
+                <ul>
+                    <li>[Technique / Equipment 1]</li>
+                    <li>[Technique / Equipment 2]</li>
+                    <li>[Technique / Equipment 3]</li>
+                    <li>[Technique / Equipment 4]</li>
+                    <li>[Technique / Equipment 5]</li>
+                </ul>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
