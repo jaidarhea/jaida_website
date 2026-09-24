@@ -5,101 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Jaida Rhea</title>
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        :root {
-            --forest-green: #1f5f2f;
-            --navy-blue: #163a70;
-            --text-black: #000000;
-            --page-bg: #ffffff;
-            --border: #d9dde3;
-        }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+        --forest-green: #1f5f2f;
+        --navy-blue: #163a70;
+        --text-black: #000000;
+        --page-bg: #ffffff;
+        --border: #d9dde3;
+    }
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: var(--page-bg);
-            color: var(--text-black);
-            line-height: 1.6;
-        }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: var(--page-bg);
+        color: var(--text-black);
+        line-height: 1.6;
+    }
 
-        p {
-            margin-bottom: 12px;
-        }
-</style>
-        .site-wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px 40px; }
-        .header-photo {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            border-bottom: 2px solid var(--border);
-            margin-bottom: 16px;
-        }
-        header nav {
-            display: flex;
-            gap: 14px;
-            flex-wrap: wrap;
-            margin-bottom: 20px;
-        }
-        header nav a {
-            text-decoration: none;
-            color: var(--navy-blue);
-            font-weight: 700;
-            border: 1px solid var(--border);
-            padding: 8px 12px;
-            border-radius: 6px;
-        }
-        header nav a.active { background: #eef3fb; }
-        .page-title {
-            color: var(--forest-green);
-            font-weight: 700;
-            font-size: 2rem;
-            margin-bottom: 18px;
-        }
-        .content-card {
-            border: 1px solid var(--border);
-            border-radius: 10px;
-            padding: 20px;
-            background: #fff;
-        }
-        .profile-photos {
-            display: flex;
-            gap: 16px;
-            flex-wrap: wrap;
-            margin-bottom: 22px;
-        }
+    p {
+        margin-bottom: 12px;
+    }
 
+    .site-wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px 40px; }
+    .header-photo {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-bottom: 2px solid var(--border);
+        margin-bottom: 16px;
+    }
+    header nav {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    header nav a {
+        text-decoration: none;
+        color: var(--navy-blue);
+        font-weight: 700;
+        border: 1px solid var(--border);
+        padding: 8px 12px;
+        border-radius: 6px;
+    }
+    header nav a.active { background: #eef3fb; }
+    .page-title {
+        color: var(--forest-green);
+        font-weight: 700;
+        font-size: 2rem;
+        margin-bottom: 18px;
+    }
+    .content-card {
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 20px;
+        background: #fff;
+    }
+    .profile-photos {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin-bottom: 22px;
+    }
+
+    .profile-photo {
+        width: calc((100% - 32px) / 3);
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 1px solid var(--border);
+    }
+
+    @media (max-width: 700px) {
         .profile-photo {
-            width: calc((100% - 32px) / 3);
-            aspect-ratio: 1 / 1;
-            object-fit: cover;
-            border-radius: 10px;
-            border: 1px solid var(--border);
+            width: calc((100% - 16px) / 2);
         }
+    }
 
-        /* On smaller screens, stack the photos more comfortably */
-        @media (max-width: 700px) {
-            .profile-photo {
-                width: calc((100% - 16px) / 2);
-            }
+    @media (max-width: 480px) {
+        .profile-photo {
+            width: 100%;
         }
-
-        @media (max-width: 480px) {
-            .profile-photo {
-                width: 100%;
-            }
-        }
-        .section-title {
-            color: var(--navy-blue);
-            font-weight: 700;
-            margin: 10px 0;
-            font-size: 1.35rem;
-        }
-        .edit-note {
-            font-size: 0.95rem;
-            margin-bottom: 12px;
-            border-left: 4px solid var(--forest-green);
-            padding-left: 10px;
-        }
-    </style>
+    }
+    .section-title {
+        color: var(--navy-blue);
+        font-weight: 700;
+        margin: 10px 0;
+        font-size: 1.35rem;
+    }
+    .edit-note {
+        font-size: 0.95rem;
+        margin-bottom: 12px;
+        border-left: 4px solid var(--forest-green);
+        padding-left: 10px;
+    }
+</style>
+    
 </head>
 <body>
     <div class="site-wrap">
@@ -141,25 +141,23 @@
                  class="profile-photo">
         </div>
                 <h2 class="section-title">About Me</h2>
-                
-                </p>
 
-                <h3 class="section-title">Jaida Lamela Rhea</h3>
+        <h3 class="section-title">Jaida Lamela Rhea</h3>
 
-                <p>
-                I am a graduate student at Clark University in Worcester, Massachusetts pursuing my M.S. in Climate and Society.
-                I hold a B.A. in environmental science and professional writing and rhetoric from Goucher College in Baltimore, Maryland where
-                I graduated in May 2025. I am particularly interested in coastal Arctic environments, and my current research interests encompass using
-                near-surface remote sensing to advance understanding of high-Arctic tundra responses to climate change, permafrost dynamics, and the
-                connection between coastal and marine environments. Beyond my research interests, I am passionate about science communication, and believe
-                developing creative, effective, and accessible communication strategies have a very important role to play in bridging the gap
-                between public understanding and scientific consensus.
-                </p>
+        <p>
+            I am a graduate student at Clark University in Worcester, Massachusetts pursuing my M.S. in Climate and Society.
+            I hold a B.A. in environmental science and professional writing and rhetoric from Goucher College in Baltimore, Maryland where
+            I graduated in May 2025. I am particularly interested in coastal Arctic environments, and my current research interests encompass using
+            near-surface remote sensing to advance understanding of high-Arctic tundra responses to climate change, permafrost dynamics, and the
+            connection between coastal and marine environments. Beyond my research interests, I am passionate about science communication, and believe
+            developing creative, effective, and accessible communication strategies have a very important role to play in bridging the gap
+            between public understanding and scientific consensus.
+        </p>
 
-                <p>
-                In my free time, you can catch me playing pick-up soccer, taking wildlife photos with my Nikon D3500, reading (two of my favorite authors are
-                Peter Wohlleben and Richard Powers), embarking on questionable hikes with my brother, or running around with my border collie bodhi and cats wren and birdie!
-                </p>
+        <p>
+            In my free time, you can catch me playing pick-up soccer, taking wildlife photos with my Nikon D3500, reading (two of my favorite authors are
+            Peter Wohlleben and Richard Powers), embarking on questionable hikes with my brother, or running around with my border collie bodhi and cats wren and birdie!
+        </p>
                 
             </section>
         </main>
