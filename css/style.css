@@ -27,7 +27,7 @@ img { display: block; max-width: 100%; }
 /* ---------- Banner + nav ---------- */
 .banner {
   display: grid;
-  grid-template-columns: 32fr 18fr 15.5fr 34.5fr;
+  grid-template-columns: 1fr 1fr;
   gap: 2px;
   height: 270px;
   background: #fff;
