@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Jaida Lamela Rhea</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caladea:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=4">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="top-bar">
+      <span class="site-name">Jaida Lamela Rhea</span>
+
+      <form class="search" action="https://www.google.com/search" method="get" target="_blank" role="search">
+        <input type="hidden" name="as_sitesearch" value="yourusername.github.io">
+        <input type="search" name="q" placeholder="Search" aria-label="Search this site">
+        <button type="submit" aria-label="Search">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/>
+            <line x1="15.5" y1="15.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </form>
+    </div>
+
+    <div class="banner">
+      <img src="images/banner-left.jpg" alt="Coastal marsh and grassy bluff above the ocean">
+      <img src="images/banner-right.jpg" alt="Shoreline and green tundra under a blue sky">
+    </div>
+
+    <nav class="site-nav">
+      <a href="index.html">about</a>
+      <a href="blog.html" class="active">blog</a>
+      <a href="research.html">research</a>
+      <a href="publications.html">publications</a>
+      <a href="from-the-field.html">from the field</a>
+    </nav>
+  </header>
+
+  <div class="page">
+    <main>
+      <h1>Blog</h1>
+      <p class="page-intro">[under construction!]</p>
+
+      <article class="card">
+        <img src="https://placehold.co/600x400/dfeed3/8a8a8a?text=Photo" alt="[Describe the photo]">
+        <div>
+          <h2><a href="#">[Post title]</a></h2>
+          <span class="meta">[Month Day, Year]</span>
+          <p>[under construction!]</p>
+          <div class="tags"><span class="tag">[fieldwork]</span><span class="tag">[Arctic]</span></div>
+          <a class="button-link" href="#">Read more →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://placehold.co/600x400/dfeed3/8a8a8a?text=Photo" alt="[Describe the photo]">
+        <div>
+          <h2><a href="#">[Post title]</a></h2>
+          <span class="meta">[Month Day, Year]</span>
+          <p>[under construction!]</p>
+          <div class="tags"><span class="tag">[remote sensing]</span></div>
+          <a class="button-link" href="#">Read more →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://placehold.co/600x400/dfeed3/8a8a8a?text=Photo" alt="[Describe the photo]">
+        <div>
+          <h2><a href="#">[Post title]</a></h2>
+          <span class="meta">[Month Day, Year]</span>
+          <p>[under construction!]</p>
+          <div class="tags"><span class="tag">[science communication]</span></div>
+          <a class="button-link" href="#">Read more →</a>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      &copy; <span id="year"></span> Jaida Rhea. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
