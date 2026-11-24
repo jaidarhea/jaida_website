@@ -62,7 +62,13 @@
         <img class="arch" src="images/whalebone-arch.jpg" alt="Whalebone arch overlooking the Arctic Ocean in Utqiaġvik, Alaska">
       </section>
     </main>
+    <footer class="site-footer">
+      &copy; <span id="year"></span> Jaida Rhea. All rights reserved.
+    </footer>
 
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </div>
 </body>
 </html>
