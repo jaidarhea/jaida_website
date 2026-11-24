@@ -1,166 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Jaida Rhea</title>
-    <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-        --forest-green: #1f5f2f;
-        --navy-blue: #163a70;
-        --text-black: #000000;
-        --page-bg: #ffffff;
-        --border: #d9dde3;
-    }
-
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        background: var(--page-bg);
-        color: var(--text-black);
-        line-height: 1.6;
-    }
-
-    p {
-        margin-bottom: 12px;
-    }
-
-    .site-wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px 40px; }
-    .header-photo {
-        width: 100%;
-        height: 180px;
-        object-fit: cover;
-        border-bottom: 2px solid var(--border);
-        margin-bottom: 16px;
-    }
-    header nav {
-        display: flex;
-        gap: 14px;
-        flex-wrap: wrap;
-        margin-bottom: 20px;
-    }
-    header nav a {
-        text-decoration: none;
-        color: var(--navy-blue);
-        font-weight: 700;
-        border: 1px solid var(--border);
-        padding: 8px 12px;
-        border-radius: 6px;
-    }
-    header nav a.active { background: #eef3fb; }
-    .page-title {
-        color: var(--forest-green);
-        font-weight: 700;
-        font-size: 2rem;
-        margin-bottom: 18px;
-    }
-    .content-card {
-        border: 1px solid var(--border);
-        border-radius: 10px;
-        padding: 20px;
-        background: #fff;
-    }
-    .profile-photos {
-        display: flex;
-        gap: 16px;
-        flex-wrap: wrap;
-        margin-bottom: 22px;
-    }
-
-    .profile-photo {
-        width: calc((100% - 32px) / 3);
-        aspect-ratio: 1 / 1;
-        object-fit: cover;
-        border-radius: 10px;
-        border: 1px solid var(--border);
-    }
-
-    @media (max-width: 700px) {
-        .profile-photo {
-            width: calc((100% - 16px) / 2);
-        }
-    }
-
-    @media (max-width: 480px) {
-        .profile-photo {
-            width: 100%;
-        }
-    }
-    .section-title {
-        color: var(--navy-blue);
-        font-weight: 700;
-        margin: 10px 0;
-        font-size: 1.35rem;
-    }
-    .edit-note {
-        font-size: 0.95rem;
-        margin-bottom: 12px;
-        border-left: 4px solid var(--forest-green);
-        padding-left: 10px;
-    }
-</style>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaida Rhea</title>
+  <meta name="description" content="Jaida Rhea — Arctic and coastal remote sensing, fieldwork, and science communication.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caladea:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="site-wrap">
-        <!-- HEADER PHOTO INSTRUCTIONS:
-             1) The site currently uses the GitHub-hosted image link below as the shared header photo.
-             2) To replace it later, upload a narrow landscape image and swap the src value below. -->
-        <img src="photos/header-photo.png" alt="Header banner image" class="header-photo">
+  <div class="page">
 
-        <header>
-            <nav>
-                <a href="index.html" class="active">Home</a>
-                <a href="research.html">Research</a>
-                <a href="publications.html">Publications</a>
-                <a href="photos.html">Photos from the Field</a>
-            </nav>
-        </header>
+    <header>
+      <div class="banner">
+        <img src="images/banner-1.jpg" alt="Coastal marsh with tidal pools under an overcast sky">
+        <img src="images/banner-2.jpg" alt="Grassy bluff above the ocean">
+        <img src="images/banner-3.jpg" alt="Sandy shoreline meeting calm water">
+        <img src="images/banner-4.jpg" alt="Green tundra under a blue sky with clouds">
+      </div>
+      <nav class="site-nav">
+        <a href="about.html">about</a>
+        <a href="blog.html">blog</a>
+        <a href="research.html">research</a>
+        <a href="publications.html">publications</a>
+        <a href="from-the-field.html">from the field</a>
+      </nav>
+    </header>
 
-        <main>
-            <h1 class="page-title">Home</h1>
+    <main>
+      <h1>Welcome!</h1>
 
-            <section class="content-card">
-            <!-- PROFILE PHOTO INSTRUCTIONS:
-                1) Upload your three photos to the /photos/ folder in your repository.
-                2) Name them about-photo-1.jpg, about-photo-2.jpg, and about-photo-3.jpg.
-                3) If you use different names or file types, update the src values below.
-                4) The three photos will appear in a horizontal row on larger screens. -->
+      <section class="intro">
+        <img class="portrait" src="images/jaida-hiking.jpg" alt="Jaida hiking on a grassy hillside at sunset">
+        <p>
+          Hello, I’m Jaida! I am passionate about exploring how climate change is
+          impacting how ecosystems function, especially in remote environments such
+          as the Arctic. Specifically, I am interested in how we can use multi-scale
+          remote sensing (i.e., satellites, drones, and tower-based cameras) connected
+          with in-situ ground measurements to better understand how coastal areas are
+          changing over time. I have conducted fieldwork in environments ranging from
+          the forested ephemeral wetlands of coastal South Carolina to the polygonal
+          tundra of Utqiaġvik, Alaska, and find immense value in developing creative,
+          effective, and accessible science communication strategies beyond my research
+          to help bring science to the doorsteps of the public.
+        </p>
+      </section>
 
-        <div class="profile-photos">
-            <img src="photos/about-photo.jpg"
-                 alt="Description of profile photo one"
-                 class="profile-photo">
-
-            <img src="photos/about4-photo.jpg"
-                 alt="Description of profile photo two"
-                 class="profile-photo">
-
-            <img src="photos/about2-photo.jpg"
-                 alt="Description of profile photo three"
-                 class="profile-photo">
+      <section class="lower">
+        <div class="links">
+          <!-- Replace with your real email address -->
+          <a class="link-box" href="mailto:your.email@example.com">Email – feel free to reach out!</a>
+          <!-- Replace with your LinkedIn profile URL -->
+          <a class="link-box" href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn – connect with me!</a>
+          <a class="link-box" href="in-the-news.html">In the news</a>
         </div>
-                <h2 class="section-title">About Me</h2>
+        <img class="arch" src="images/whalebone-arch.jpg" alt="Whalebone arch overlooking the Arctic Ocean in Utqiaġvik, Alaska">
+      </section>
+    </main>
 
-        <h3 class="section-title">Jaida Lamela Rhea</h3>
-
-        <p>
-            I am a graduate student at Clark University in Worcester, Massachusetts pursuing my M.S. in Climate and Society.
-            I hold a B.A. in environmental science and professional writing and rhetoric from Goucher College in Baltimore, Maryland where
-            I graduated in May 2025. I am particularly interested in coastal Arctic environments, and my current research interests encompass using
-            near-surface remote sensing to advance understanding of high-Arctic tundra responses to climate change, permafrost dynamics, and the
-            connection between coastal and marine environments. Beyond my research interests, I am passionate about science communication, and believe
-            developing creative, effective, and accessible communication strategies have a very important role to play in bridging the gap
-            between public understanding and scientific consensus.
-        </p>
-
-        <p>
-            In my free time, you can catch me playing pick-up soccer, taking wildlife photos with my Nikon D3500, reading (two of my favorite authors are
-            Peter Wohlleben and Richard Powers), embarking on questionable hikes with my brother, or running around with my border collie bodhi and cats wren and birdie!
-        </p>
-                
-            </section>
-        </main>
-    </div>
+  </div>
 </body>
 </html>
