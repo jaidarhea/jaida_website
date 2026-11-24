@@ -110,7 +110,15 @@ h1 {
   aspect-ratio: 400 / 154;
   object-fit: cover;
 }
-
+/* ---------- Footer ---------- */
+.site-footer {
+  margin-top: 3.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #e3e3e3;
+  text-align: center;
+  color: var(--muted-text);
+  font-size: 1rem;
+}
 /* ---------- Phones & small screens ---------- */
 @media (max-width: 760px) {
   .banner { height: 160px; }
