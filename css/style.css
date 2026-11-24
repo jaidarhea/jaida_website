@@ -35,8 +35,7 @@ img { display: block; max-width: 100%; }
   padding: 0.4rem 1.5rem;
 }
 .site-name {
-  color: #4f6b45;
-  text-decoration: none;
+  color: var(--muted-text);
   font-size: 1.35rem;
   letter-spacing: 0.02em;
 }
@@ -56,6 +55,8 @@ img { display: block; max-width: 100%; }
   font-size: 1rem;
   width: 200px;
   padding: 0.3rem 0;
+  -webkit-appearance: none;
+  appearance: none;
 }
 .search button {
   display: flex;
@@ -64,6 +65,8 @@ img { display: block; max-width: 100%; }
   color: var(--muted-text);
   cursor: pointer;
   padding: 0.25rem;
+  -webkit-appearance: none;
+  appearance: none;
 }
 .search button:hover { color: #4f6b45; }
 .search:focus-within { border-color: #8fb07c; }
