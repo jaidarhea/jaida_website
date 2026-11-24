@@ -28,7 +28,7 @@ img { display: block; max-width: 100%; }
 .banner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2px;
+  gap: 0;
   height: 270px;
   background: #fff;
 }
