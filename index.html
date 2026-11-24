@@ -11,22 +11,41 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <header class="site-header">
+    <!-- Thin green bar: name on the left, search on the right -->
+    <div class="top-bar">
+      <a class="site-name" href="index.html">Jaida Rhea</a>
+
+      <!-- Searches your site with Google. Replace yourusername.github.io with your site's address -->
+      <form class="search" action="https://www.google.com/search" method="get" target="_blank" role="search">
+        <input type="hidden" name="as_sitesearch" value="yourusername.github.io">
+        <input type="search" name="q" placeholder="Search" aria-label="Search this site">
+        <button type="submit" aria-label="Search">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/>
+            <line x1="15.5" y1="15.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </form>
+    </div>
+
+    <!-- Full-width banner -->
+    <div class="banner">
+      <img src="images/banner-left.jpg" alt="Coastal marsh and grassy bluff above the ocean">
+      <img src="images/banner-right.jpg" alt="Shoreline and green tundra under a blue sky">
+    </div>
+
+    <nav class="site-nav">
+      <a href="about.html">about</a>
+      <a href="blog.html">blog</a>
+      <a href="research.html">research</a>
+      <a href="publications.html">publications</a>
+      <a href="from-the-field.html">from the field</a>
+    </nav>
+  </header>
+
   <div class="page">
-
-    <header>
-      <div class="banner">
-        <img src="images/banner-left.jpg" alt="Coastal marsh and grassy bluff above the ocean">
-        <img src="images/banner-right.jpg" alt="Shoreline and green tundra under a blue sky">
-      </div>
-      <nav class="site-nav">
-        <a href="about.html">about</a>
-        <a href="blog.html">blog</a>
-        <a href="research.html">research</a>
-        <a href="publications.html">publications</a>
-        <a href="from-the-field.html">from the field</a>
-      </nav>
-    </header>
-
     <main>
       <h1>Welcome!</h1>
 
@@ -42,12 +61,7 @@
           the forested ephemeral wetlands of coastal South Carolina to the polygonal
           tundra of Utqiaġvik, Alaska, and find immense value in developing creative,
           effective, and accessible science communication strategies beyond my research
-          to help bring science to the doorsteps of the public. I am currently finishing
-          up my M.S. in Climate and Society at Clark University and work
-          as a Littoral Science and Remote Sensing Assistant Researcher at Computational
-          Physics, Inc. Outside of academics and research, I enjoy running, playing pick-up
-          soccer, hiking, wildlife photography, and reading! Two of my favorite authors are
-          Peter Wohlleben and Richards Powers, check out my current read here!
+          to help bring science to the doorsteps of the public.
         </p>
       </section>
 
@@ -62,13 +76,14 @@
         <img class="arch" src="images/whalebone-arch.jpg" alt="Whalebone arch overlooking the Arctic Ocean in Utqiaġvik, Alaska">
       </section>
     </main>
+
     <footer class="site-footer">
       &copy; <span id="year"></span> Jaida Rhea. All rights reserved.
     </footer>
-
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
   </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
