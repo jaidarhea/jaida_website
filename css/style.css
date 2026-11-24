@@ -1,0 +1,122 @@
+/* ---------- Colors & fonts (edit here to restyle the whole site) ---------- */
+:root {
+  --nav-green: #dfeed3;
+  --box-blue: #dfe7f3;
+  --muted-text: #8a8a8a;
+  --body-text: #111;
+  --font: "Cambria", "Caladea", Georgia, "Times New Roman", serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--body-text);
+  font-family: var(--font);
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+img { display: block; max-width: 100%; }
+
+/* ---------- Banner + nav ---------- */
+.banner {
+  display: grid;
+  grid-template-columns: 32fr 18fr 15.5fr 34.5fr;
+  gap: 2px;
+  height: 270px;
+  background: #fff;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: var(--nav-green);
+  padding: 0.55rem 1rem;
+}
+.site-nav a {
+  color: var(--muted-text);
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 0 0.5rem;
+}
+.site-nav a:hover { color: #4f6b45; }
+
+/* ---------- Welcome ---------- */
+h1 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 2rem;
+  margin: 2.25rem 0 2.5rem;
+}
+
+/* ---------- Intro: photo + paragraph ---------- */
+.intro {
+  display: grid;
+  grid-template-columns: 43% 1fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+.portrait {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+.intro p {
+  margin: 0.75rem 0 0;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  text-align: justify;
+  hyphens: auto;
+}
+
+/* ---------- Lower row: link boxes + arch photo ---------- */
+.lower {
+  display: grid;
+  grid-template-columns: 43% 1fr;
+  gap: 2.5rem;
+  margin-top: 2.75rem;
+  align-items: start;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.link-box {
+  display: block;
+  background: var(--box-blue);
+  color: var(--muted-text);
+  text-decoration: none;
+  font-size: 1.35rem;
+  padding: 0.55rem 0.9rem;
+  transition: background 0.2s, color 0.2s;
+}
+.link-box:hover { background: #cbd8ec; color: #3d4f6b; }
+
+.arch {
+  width: 100%;
+  aspect-ratio: 400 / 154;
+  object-fit: cover;
+}
+
+/* ---------- Phones & small screens ---------- */
+@media (max-width: 760px) {
+  .banner { height: 160px; }
+  .site-nav { justify-content: center; gap: 0.25rem 1rem; }
+  .site-nav a { font-size: 1.1rem; }
+  .intro, .lower { grid-template-columns: 1fr; gap: 1.75rem; }
+  .intro p { font-size: 1.1rem; text-align: left; hyphens: manual; }
+  .link-box { font-size: 1.15rem; }
+}
