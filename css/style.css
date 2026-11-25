@@ -298,3 +298,19 @@ h1 {
   .card { grid-template-columns: 1fr; gap: 1rem; }
   .page-intro { font-size: 1.05rem; }
 }
+.poster-embed { margin-top: 0.6rem; }
+.poster-embed summary {
+  cursor: pointer;
+  font-weight: 700;
+  display: inline-block;
+}
+.poster-embed iframe {
+  display: block;
+  width: 100%;
+  height: 80vh;
+  max-height: 900px;
+  margin-top: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.poster-fallback { font-size: 0.9em; margin-top: 0.3rem; }
