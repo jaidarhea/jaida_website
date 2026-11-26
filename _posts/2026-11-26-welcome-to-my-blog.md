@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Welcome to my blog"
+title: "The Stars Shine Brighter in Monteverde"
 image: /images/blog/link-to-image.jpg
 ---
 
