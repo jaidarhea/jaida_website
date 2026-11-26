@@ -314,3 +314,9 @@ h1 {
   border-radius: 4px;
 }
 .poster-fallback { font-size: 0.9em; margin-top: 0.3rem; }
+
+.slides-embed iframe {
+  height: auto;
+  aspect-ratio: 16 / 9;
+  max-height: none;
+}
