@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Welcome to my blog"
+image: /images/blog/link-to-image.jpg
 ---
 
 This first paragraph becomes the preview on the blog page, so make it a good hook.
