@@ -376,3 +376,22 @@ h1 {
 /* Latest posts box on the home page */
 .latest-posts ul { list-style: none; padding: 0; }
 .latest-posts li { margin-bottom: 0.6rem; }
+
+.post-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+.post-thumb { flex: 0 0 220px; }
+.post-thumb img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+.post-text { flex: 1; }
+
+@media (max-width: 600px) {
+  .post-item { flex-direction: column; }
+  .post-thumb { flex-basis: auto; width: 100%; }
+}
