@@ -10,10 +10,8 @@ I sat in Ronald Reagan Washington National Airport waiting to board my first eve
 
 *Here we go*. I swung my grey Eddie Bauer bag over my shoulder and squeezed into line, holding my passport and boarding ticket in my hand. I boarded the flight, and eventually we were off. Hours later, I gazed out of the airplane window while listening to *The View Between Villages - Extended Version* by Noah Kahan. The bright blue of the Caribbean Sea suddenly turned into the green folds of the mountains of Costa Rica.
 
----
-image: /images/cloudforest-cr.jpg
+![Green cloud forest mountains of Monteverde]({{ '/images/cloudforest-cr.jpg' | relative_url }})
 *The Mountains of Monteverde.*
----
 
 From late December 2023 to mid-January 2024, I studied abroad in Monteverde, Costa Rica. This trip was through the Council on International Educational Exchange (CIEE), where I stayed on a small campus with other American college students in the remote green mountains of the northwestern part of the country. From the beaches of Manuel Antonio to the volcanoes of Parque Nacional Rincon de la Vieja, this experience was one of a lifetime.
 
