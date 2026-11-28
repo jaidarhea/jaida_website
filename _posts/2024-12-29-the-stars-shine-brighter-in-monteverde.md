@@ -15,7 +15,7 @@ I sat in Ronald Reagan Washington National Airport waiting to board my first eve
 
 From late December 2023 to mid-January 2024, I studied abroad in Monteverde, Costa Rica. This trip was through the Council on International Educational Exchange (CIEE), where I stayed on a small campus with other American college students in the remote green mountains of the northwestern part of the country. From the beaches of Manuel Antonio to the volcanoes of Parque Nacional Rincon de la Vieja, this experience was one of a lifetime.
 
-![Manuel Antonio]({{ '/images/manuelantonio-cr.jpg' | relative_url }})
+![Manuel Antonio]({{ '/images/manuel-antonio-cr.jpg' | relative_url }})
 *manuel antonio*
 image: /images/manuelantonio-cr.jpg
 
@@ -31,24 +31,34 @@ The CIEE campus where our bungalows were located was amazing. The rec room was w
 
 The basketball court holds some of my best memories from studying abroad in Monteverde. Almost every single night throughout my time in Costa Rica, our cohort would go to the basketball court, lay down on the asphalt, and look at the stars. The night sky was truly the most amazing thing I have ever seen, and it felt like I could see galaxies. To this day, whenever I see the night sky I think back to the nights laying on the basketball court trying to count the stars laughing alongside my new friends.
 
-image: /images/stars-basketball-cr.jpg
+![the night sky from the basketball court]({{ '/images/stars-basketball-cr.jpg' | relative_url }})
+*the night sky from the basketball court*
 
 Reception was another place our cohort liked to hang out. We would spend long afternoons watching the Monteverde sunset playing cards. Reception was also the spot where we would meet for classes or where we would go if the student life coordinators had to make an announcement. This area also connected the dining hall, student life coordinator offices, the computer lab, and the library. The dining hall was interesting because there were no phones allowed inside. Before each meal, we had to place our phones on a table outside the door before we headed in. This rule was weird to get used to at first, but I also think it's what allowed my cohort to bond so well because in the United States, we're all used to staring at our phones all the time, even while we eat.
 
-image: /images/campus-cr.jpg
+![around campus]({{ '/images/campus-cr.jpg' | relative_url }})
+*around campus*
 
 The campus farm was located a short walk from our bungalows. This was an *integrated farm*, or where systems work to benefit each other. This farm had many different forms of livestock, such as chickens and cows, and even had a system where the wastewater from campus was used as water for the crops, and then was recycled back to campus through a cleansing treatment.
 
 I forgot to mention! While I was in Costa Rica I took a course called *Sustainable Development for the Tropics*. Our classrooms were small structures lined with long desks and wooden benches with a television in the front of the room. Like the rest of the buildings on campus, these classrooms had no doors and open windows.
 
-image: /images/integrated-farm-cr.jpg
-image: /images/classroom-cr.jpg
+![the integrated farm]({{ '/images/integrated-farm-cr.jpg' | relative_url }})
+*the integrated farm*
+
+![what the classrooms looked like and a diagram of the integrated farm]({{ '/images/classroom-cr.jpg' | relative_url }})
+*what the classrooms looked like and a diagram of the integrated farm*
 
 The CIEE Monteverde campus was located in a valley, and to get there from pretty much anywhere, we had to drive down pretty crazy mountain switchbacks. Sometimes the roads were gravel, but other times they were dirt. The roads were also pretty tight and there were no barriers on the side of the road protecting the vehicles from going over the side. To drive around, our cohort would go in these big white vans that could fit around twenty people, and the drivers had absolutely no fear driving down those mountain switchbacks! Because our campus was in the cloud forest, sometimes we would literally be driving above the clouds.
 
-image: /images/mountain-switchbacks-cr.jpg
-image: /images/bungalow-view-cr.jpg
-image: /images/dininghall-view-cr.jpg
+![the road to campus]({{ '/images/mountain-switchbacks-cr.jpg' | relative_url }})
+*the road to campus*
+
+![the view of the cloud forest from the bungalows]({{ '/images/bungalow-view-cr.jpg' | relative_url }})
+*the view of the cloud forest from the bungalows*
+
+![the hill behind the dining hall]({{ '/images/dininghall-view-cr.jpg' | relative_url }})
+*the hill behind the dining hall*
 
 There was also a locally-managed park about a mile walk from campus, which was called Finca Ecológica San Luis. Throughout my time in Costa Rica, I would walk there with my cohort on our days off from class. We would meet a friendly older gentleman near the entrance, where would spend several minutes talking with him while he quizzed us on our Spanish. He seemed to enjoy speaking with us, and would help us correct our words whenever we mispronounced something. After a good hike through the forest, we would arrive at a small waterfall with a swimming area underneath.
 
