@@ -11,16 +11,21 @@ I sat in Ronald Reagan Washington National Airport waiting to board my first eve
 *Here we go*. I swung my grey Eddie Bauer bag over my shoulder and squeezed into line, holding my passport and boarding ticket in my hand. I boarded the flight, and eventually we were off. Hours later, I gazed out of the airplane window while listening to *The View Between Villages - Extended Version* by Noah Kahan. The bright blue of the Caribbean Sea suddenly turned into the green folds of the mountains of Costa Rica.
 
 ![Green cloud forest mountains of Monteverde]({{ '/images/cloudforest-cr.jpg' | relative_url }})
-*The Mountains of Monteverde.*
+*monteverde mountains*
 
 From late December 2023 to mid-January 2024, I studied abroad in Monteverde, Costa Rica. This trip was through the Council on International Educational Exchange (CIEE), where I stayed on a small campus with other American college students in the remote green mountains of the northwestern part of the country. From the beaches of Manuel Antonio to the volcanoes of Parque Nacional Rincon de la Vieja, this experience was one of a lifetime.
 
+![Manuel Antonio]({{ '/images/manuelantonio-cr.jpg' | relative_url }})
+*manuel antonio*
 image: /images/manuelantonio-cr.jpg
 
 The J-Term cohort in my study abroad program was relatively small. There were four bungalows on campus, each with four rooms each. Each room housed four students, equipped with four beds, two wardrobes, four desks, and one shared bathroom with a sink, toilet, and shower. Our cohort filled up two of the bungalows and half of a third, and I roomed with two other girls so one of our bunks was empty.
 
-image: /images/bungalow-outside-cr.jpg
-image: /images/bungalow-inside-cr.jpg
+![the bungalows]({{ '/images/bungalow-outside-cr.jpg' | relative_url }})
+*the bungalows*
+
+![inside the bungalow]({{ '/images/bungalow-inside-cr.jpg' | relative_url }})
+*inside the bungalow*
 
 The CIEE campus where our bungalows were located was amazing. The rec room was where everybody liked to hang out, which was equipped with a television, big fireplace, several couches, board games, and a foosball table. Almost none of the buildings were really *indoors*. Because the weather in Monteverde is pretty nice all year around (besides the unpredictable rainstorms due to being in the cloud forest), there were no doors on many of the buildings and several of the windows didn't have any glass and were instead just screens covered by bars. The walls of the rec room weren't really walls either, and instead they were large screens that went from the ground to the ceiling. Outside of the rec room was the basketball court, with a mini soccer field and volleyball field located nearby.
 
